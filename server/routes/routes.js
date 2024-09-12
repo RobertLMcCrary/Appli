@@ -6,7 +6,7 @@ const { test, fetchAllJobs, getJobById, createJob, updateJob, deleteJob, deleteA
 const app = express()
 
 const corsOptions = {
-    origin: 'http://127.0.0.1:5500/client/index.html',
+    origin: 'http://localhost:3000',
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     allowedHeaders: ['Content-Type'],
 }
