@@ -1,0 +1,41 @@
+# Create a new job
+POST http://localhost:5001/jobs
+Content-Type: application/json
+
+{
+  "title": "Software Engineer",
+  "status": "Open",
+  "location": "New York"
+}
+
+###
+# Fetch all jobs
+GET http://localhost:5001/jobs
+Content-Type: application/json
+
+###
+
+# Fetch a single job by ID
+GET http://localhost:5001/jobs/(put _id/object id here)
+Content-Type: application/json
+
+###
+# Update a job by ID
+PUT http://localhost:5001/jobs/(put _id/object id here)
+Content-Type: application/json
+
+{
+  "title": "Senior Software Engineer",
+  "status": "Closed",
+  "location": "San Francisco"
+}
+
+###
+# Delete a job by ID
+DELETE http://localhost:5001/(put _id/object id here)
+Content-Type: application/json
+
+###
+#Delete all jobs
+DELETE  http://localhost:5001/jobs/
+Content-Type: application/json
